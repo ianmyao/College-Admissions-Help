@@ -12,6 +12,12 @@
     .infographic { margin: 1rem 0; }
     .infographic img { width: 100%; max-width: 800px; display: block; margin: auto; border: 1px solid #ccc; border-radius: 5px; }
     footer { background: #204080; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+    .contact { background: #e8efff; padding: 1rem; border-radius: 8px; text-align: center; margin-top: 2rem; }
+    .contact p { margin: 0.5rem 0; font-size: 1.1rem; }
+    .contact a { color: #204080; text-decoration: none; font-weight: bold; }
+    .form-group { margin-bottom: 1rem; }
+    form input, form textarea { width: 100%; padding: 0.5rem; border-radius: 4px; border: 1px solid #ccc; }
+    form button { background-color: #204080; color: white; border: none; padding: 0.7rem 1.5rem; border-radius: 4px; cursor: pointer; }
   </style>
 </head>
 <body>
@@ -48,8 +54,28 @@
     </ul>
   </section>
 
+  <section class="contact">
+    <h2>Need Help or Want to Talk?</h2>
+    <p>Email me at: <a href="mailto:ianmitchellyao@gmail.com">ianmitchellyao@gmail.com</a></p>
+    <p>DM me on Instagram: <a href="https://instagram.com/ian.yaooooo" target="_blank">@ian.yaooooo</a></p>
+    <p>I’m happy to chat, share tips, or just listen!</p>
+    <form action="mailto:ianmitchellyao@gmail.com" method="POST" enctype="text/plain">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
   <footer>
     <p>&copy; 2025 Rethinking Admissions | Built by students for students</p>
   </footer>
 </body>
 </html>
+
